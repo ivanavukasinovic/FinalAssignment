@@ -86,8 +86,8 @@ public class Main {
 			berries.add(new Berry(getBerryName(i), getBerrySize(i), getBerryGrowthTime(i)));
 		}
 		
-		List<Berry> maxSizedBerries = getMaxSizedBerries(berries);
-		List<Berry> maxSizedBerriesWithMinGrowthTime = getMinGrowthTimeBerries(maxSizedBerries);
+		List<Berry> minGrowthTimeBerries = getMinGrowthTimeBerries(berries);
+		List<Berry> maxSizedBerriesWithMinGrowthTime = getMaxSizedBerries(minGrowthTimeBerries);
 
 		String oneOrMore = maxSizedBerriesWithMinGrowthTime.size() == 1 
 				? "is one largest Berry"
